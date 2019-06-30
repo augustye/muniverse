@@ -2,14 +2,15 @@
   var gameOver = false;
   window.muniverse = {
     init: function() {
-      return setTimeout(faketime.pause, 2000);
+      return faketime.pause();
     },
     step: function(millis) {
       faketime.advance(millis);
       return Promise.resolve(gameOver);
     },
     score: function() {
-      return Promise.resolve(3);
+      var score = $(".monitor_value_3Yexa").textContent*1;
+      return Promise.resolve(score);
     }
   };
 
