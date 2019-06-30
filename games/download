@@ -51,7 +51,7 @@ do
   for resource in $(echo "$item" | jq -r '.resources | .[]')
   do
     mkdir -p "$(dirname "$dldir/$resource")"
-    curl -s "$baseURL$resource" > "$dldir/$resource" || continue 2
+    curl -s "${baseURL%/*}/$resource" > "$dldir/$resource" || continue 2
   done
 
   # Run site-specific processing scripts.
