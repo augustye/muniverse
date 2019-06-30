@@ -9668,15 +9668,14 @@
     "name": "ScratchFlappyBird-v0",
     "base": "http://127.0.0.1:8000/flappybird.html",
     "top_injections": [
-      "faketime.js"
     ],
     "bottom_injections": [
-      "utils.js",
       "ScratchFlappyBird-v0.js"
     ],
     "resources": [
       "js/gui.js",
-      "js/lib.min.js"
+      "js/lib.min.js",
+      "js/faketime.js"
     ],
     "processors": [
     ],
