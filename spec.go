@@ -3217,6 +3217,19 @@ var EnvSpecs = []*EnvSpec{
 		MouseType:     "none",
 		MouseRequired: false,
 	},
+	{
+		Name:      "ScratchFlappyBird-v0",
+		BaseURL:   "http://127.0.0.1:8000/flappybird.html",
+		Width:     320,
+		Height:    480,
+		AllCanvas: false,
+		Options:   "{}",
+		KeyWhitelist: []string{
+			"Space",
+		},
+		MouseType:     "tap",
+		MouseRequired: false,
+	},
 }
 
 // SpecForName finds the first entry in EnvSpecs with the
