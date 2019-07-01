@@ -2,7 +2,11 @@
   var gameOver = false;
   window.muniverse = {
     init: function() {
-      return faketime.pause();
+      return pollAndWait(2000, function() {
+        return false;
+      }).then(function() {
+        faketime.pause();
+      });
     },
     step: function(millis) {
       faketime.advance(millis);
