@@ -3220,14 +3220,14 @@ var EnvSpecs = []*EnvSpec{
 	{
 		Name:      "ScratchFlappyBird-v0",
 		BaseURL:   "http://127.0.0.1:8000/flappybird.html",
-		Width:     320,
-		Height:    480,
+		Width:     480,
+		Height:    360,
 		AllCanvas: false,
 		Options:   "{}",
 		KeyWhitelist: []string{
 			"Space",
 		},
-		MouseType:     "tap",
+		MouseType:     "none",
 		MouseRequired: false,
 	},
 }

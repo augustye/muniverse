@@ -9681,8 +9681,8 @@
     "processors": [
     ],
     "metadata": {},
-    "width": 320,
-    "height": 480,
+    "width":480,
+    "height":360,
     "all_canvas": false,
     "key_whitelist": [
       "Space"
