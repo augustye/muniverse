@@ -14,7 +14,11 @@
       return Promise.resolve(gameOver);
     },
     score: function() {
-      var score = document.getElementsByClassName(monitor_class)[0].textContent*1;
+      var score = 0;
+      if(document.getElementsByClassName(monitor_class).length)
+      {
+        score = document.getElementsByClassName(monitor_class)[0].textContent*1;
+      }
       return Promise.resolve(score);
     }
   };
